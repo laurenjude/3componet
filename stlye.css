@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+p,
+button {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* ### Neutral */
+
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+  background-color: hsl(0, 0%, 95%);
+  font-weight: 700;
+}
+
+.father {
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  text-align: start;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 60px;
+  color: hsl(0, 0%, 95%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.fr {
+  margin-top: 15px;
+}
+
+.fr button {
+  margin-top: 35px;
+  border-radius: 25px;
+  padding: 10px 10px;
+  border: none;
+  color: hsl(31, 77%, 52%);
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 60px;
+  color: hsl(0, 0%, 95%);
+}
+
+.sr h2 {
+  position: relative;
+  top: 12px;
+}
+
+.sr p {
+  position: relative;
+  top: 15px;
+}
+
+.sr button {
+  margin-top: 48px;
+  border-radius: 25px;
+  padding: 10px 10px;
+  border: none;
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 60px;
+  color: hsl(0, 0%, 95%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.lr {
+  margin-top: 15px;
+}
+
+.lr button {
+  margin-top: 35px;
+  border-radius: 25px;
+  padding: 10px 10px;
+  border: none;
+  color: hsl(179, 100%, 13%);
+}
+
+/* media query------------------------------- */
+
+@media (max-width: 500px) {
+  .father {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: auto;
+    margin-top: 60px;
+    align-items: center;
+  }
+
+  .sedans {
+    border-top-right-radius: 10px;
+  }
+
+  .fr button {
+    position: relative;
+    bottom: 20px;
+  }
+
+  .sr button {
+    position: relative;
+    bottom: 10px;
+  }
+
+  .luxury {
+    border-bottom-left-radius: 10px;
+  }
+
+  .lr {
+    position: relative;
+    bottom: 15px;
+  }
+}
