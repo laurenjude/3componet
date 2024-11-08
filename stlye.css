@@ -4,11 +4,13 @@
 
 h2 {
   font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
 }
 
 p,
 button {
   font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
 }
 
 :root {
@@ -59,11 +61,15 @@ body {
 }
 
 .fr button {
-  margin-top: 35px;
+  margin-top: 10px;
   border-radius: 25px;
   padding: 10px 10px;
   border: none;
   color: hsl(31, 77%, 52%);
+}
+
+.fr button:hover {
+  background-color: black;
 }
 
 .suv {
@@ -92,6 +98,10 @@ body {
   color: hsl(184, 100%, 22%);
 }
 
+.sr button:hover {
+  background-color: black;
+}
+
 .luxury {
   background-color: hsl(179, 100%, 13%);
   padding-top: 30px;
@@ -114,20 +124,30 @@ body {
   color: hsl(179, 100%, 13%);
 }
 
+.lr button:hover {
+  background-color: black;
+}
+
 /* media query------------------------------- */
 
 @media (max-width: 500px) {
   .father {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 270px;
     margin: auto;
     margin-top: 60px;
     align-items: center;
+    margin-bottom: 30px;
   }
 
   .sedans {
     border-top-right-radius: 10px;
+    text-align: start;
+  }
+
+  .fr h2 {
+    font-size: 40px;
   }
 
   .fr button {
@@ -140,11 +160,34 @@ body {
     bottom: 10px;
   }
 
+  .sr h2 {
+    font-size: 40px;
+  }
+
   .luxury {
     border-bottom-left-radius: 10px;
   }
 
   .lr {
+    position: relative;
+    bottom: 15px;
+  }
+
+  .lr {
+    position: relative;
+    top: 5px;
+  }
+
+  .lr p {
+    position: relative;
+    top: 10px;
+  }
+
+  .lr h2 {
+    font-size: 40px;
+  }
+
+  .lr button {
     position: relative;
     bottom: 15px;
   }
